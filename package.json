@@ -1,0 +1,49 @@
+{
+  "name": "ems-challenge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "setup_db": "node ./scripts/setup_db.js",
+    "seed": "node ./scripts/seed.js"
+  },
+  "dependencies": {
+    "@react-router/fs-routes": "^7.1.5",
+    "@react-router/node": "^7.1.5",
+    "@react-router/serve": "^7.1.5",
+    "@schedule-x/calendar": "^2.19.0",
+    "@schedule-x/events-service": "^2.19.0",
+    "@schedule-x/ical": "^2.19.0",
+    "@schedule-x/react": "^2.19.0",
+    "@schedule-x/theme-default": "^2.19.0",
+    "express": "^4.21.2",
+    "isbot": "^5.1.17",
+    "js-yaml": "^4.1.0",
+    "luxon": "^3.5.0",
+    "multer": "^1.4.5-lts.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.5",
+    "react-router-dom": "^7.1.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.1.5",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.17.17",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "react-router-devtools": "^1.1.0",
+    "tailwindcss": "^4.0.6",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
